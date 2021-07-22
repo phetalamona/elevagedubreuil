@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px){
   #menu {
     display:none;
   }
@@ -8,6 +8,23 @@
 .texteetalons {
   display: none;
 }
+
+#textegalerie {
+  display: none;
+}
+
+.container {display: none}
+
+#expandedImg {display: none}
+#imgtext {display: none}
+.closebtn {display: none}
+
+#nom_elevage {position: absolute;
+              left:5%;
+              top:15%;
+              z-index: 10;
+}
+
   .menumobile {
     display: block;
     position:absolute;
