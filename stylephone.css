@@ -20,7 +20,7 @@
 .closebtn {display: none}
 
 #nom_elevage {position: absolute;
-              left:5%;
+              left:5px;
               top:15%;
               z-index: 10;
 }
@@ -48,12 +48,26 @@
 
 }
 
+#menuburgerouvert p {  font-family: "Minipax";
+  font-size: 1em;
+  padding:5%;
+
+}
+
+.liensaccueil {
+  font-size: 2.5em;
+  line-height: 2em;
+  text-decoration: none;
+  letter-spacing: -0.03em;
+  border: 2px solid #00cc82;
+
+}
 
 
   .containermobile {
   display: inline-block;
   cursor: pointer;
-  margin-left: 25px;
+  margin-left: 5px;
   margin-top:5px;
 }
 
