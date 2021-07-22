@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="stylephone.css">
+</head>
+<body>
+
+<div class="titre"><div id="nom_elevage">L'élevage du Breuil</div></div>
+<div id="menu"><ul class="liensmenu">Accueil</ul>
+<ul class="liensmenu"><a href="galerie.html">Galerie</a></ul>
+<ul class="liensmenu"><a href="contact.html">Contact</a></ul>
+<ul class="liensmenu"><a href="index.html">fr/en</a></ul>
+</div>
+<ul class="liensaccueil"><a href="etalons.html">Etalons</a></ul>
+<ul class="liensaccueil"><a href="poulini.html">Poulinières</a></ul>
+<ul class="liensaccueil"><a href="naissances.html">Naissances</a></ul>
+<ul class="liensaccueil"><a href="palmares.html">Palmarès</a></ul>
+
+<div class="contenuaccueil">
+
+	<!-- Slider main container -->
+	<div class="swiper-container">
+	  <!-- Additional required wrapper -->
+	  <div class="swiper-wrapper">
+	    <!-- Slides -->
+	    <div class="swiper-slide"><img src="img/accueil1.jpg"></div>
+	    <div class="swiper-slide"><img src="img/accueil2.jpg"></div>
+	    <div class="swiper-slide"><img src="img/accueil3.jpg"></div>
+			<div class="swiper-slide"><img src="img/accueil4.jpg"></div>
+			<div class="swiper-slide"><img src="img/accueil5.jpg"></div>
+	    <div class="swiper-slide"><img src="img/accueil6.jpg"></div>
+			<div class="swiper-slide"><img src="img/accueil7.jpg"></div>
+	  </div>
+	  <!-- If we need pagination -->
+	  <div class="swiper-pagination"></div>
+
+	  <!-- If we need navigation buttons -->
+	  <div class="swiper-button-prev"></div>
+	  <div class="swiper-button-next"></div>
+
+	  <!-- If we need scrollbar -->
+	  <div class="swiper-scrollbar"></div>
+	</div>
+
+	<p class="texteaccueil">
+
+    Welcome
+
+      Basta, the du Breuil stud’s foundation broodmare originates from the same bloodline as Malika Fontenay, who foaled Gr.1 PA winners: Darike, Chndaka, who are themselves sires of Gr. 1 PA winners, and as Unchained Melody, dam of Gr.1 PA winners Mizzna, Munjiz (leading sire), Gabra, Silver Zahatif (winner French Endurance Championship 120 km at Monpazier in 2003).
+
+      The du Breuil stud breeds pure-bred Arabian horses for sports (flat racing and competitive endurance focus) in a high-quality environment with passion, precision and know-how. The horses are bred semi-extensively over more than twenty hectares, and are broken in, in situ, using a lake (“aquatraining” see this link).
+
+     The broodmares are covered by stallions of French origin: Djelfor, Djouras Tu, Tidjani, Kesberoy, Dormane, Dunixi, Kador du Bournais, Munjiz, Mahabb, Monsieur al Maury, Divamer, No Risk Al Maury, Jaafer, Josco du Cayrou, Al Mamum Monlau.
+     The stud breeds sturdy horses, given supplements according to their needs and the season, fed with traditional natural corn and first-rate local produced hay. The pelleted concentrates are supplied by Baileys (Royal Oats).
+     The horses are frequently handled from an early age with individual care (equine dentist, farrier, osteopathy); they are de-wormed by performing fecal exams.
+     The stud is located in the middle of France, in an original and recognized breeding area : the Berry Limousin, 300 km south of Paris (via the A20 highway).
+    FaLang translation system by Faboba
+
+</div>
+
+<div id="footer">
+<p>crédits</p>
+</div>
+
+<script>
+const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
+<script>
+function burger(x) {
+  x.classList.toggle("change");
+  document.getElementById("menuburgerouvert").style.display = 'block';
+}
+
+document.getElementById("close").onclick = function() {
+          document.getElementById("menuburgerouvert").style.display = "none";
+        }
+
+</script>
+</body>
+</html>

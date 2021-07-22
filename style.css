@@ -1,0 +1,445 @@
+@font-face {
+  font-family: "ApfelGrotezk";
+  src: url("fonts/ApfelGrotezk-Regular.woff2") format("woff2"),
+       url("fonts/ApfelGrotezk-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Minipax";
+  src: url("fonts/Minipax-Regular.woff2") format("woff2"),
+       url("fonts/Minipax-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Messapia";
+  src: url("fonts/Messapia-Regular.woff2") format("woff2"),
+       url("fonts/Messapia-Regular.woff") format("woff");
+}
+
+ul {
+list-style-type: none;
+padding-left: 0;
+}
+
+a {color:black;}
+a:visited {
+  text-decoration: none;
+  color: black;
+
+}
+
+#titre {position: absolute;
+  height:8%;
+  width:100%;
+  top:0%;
+  left:0%;
+  font-family: "ApfelGrotezk", sans-serif;
+  background-color: black;
+  z-index:1000;
+
+}
+
+#nom_elevage {position: absolute;
+              left:15%;
+              top:15%;
+              z-index: 10;
+}
+#nom_elevage a {
+  font-family: "Messapia", sans-serif;
+  font-size: 1.8em;
+  color: white;
+  text-decoration: none;
+
+}
+
+#menu {
+  position: absolute;
+      right:3%;
+      top:40%;
+      background-color: white;
+      border-radius:20px;
+      border: 1px solid black;
+      font-family: "ApfelGrotezk", sans-serif;
+      font-size: 1em;
+      z-index: 10;
+
+}
+#menuburgerouvert {display: none;}
+
+.liensmenu {position: relative;
+  display: inline;
+  padding:10px;
+}
+
+#footer {
+        position: absolute;
+        bottom:2%;
+        left:3%;
+        width:8%;
+        background-color: white;
+        border-radius:20px;
+        border: 1px solid black;
+        text-align: center;
+        font-family: "ApfelGrotezk", sans-serif;
+        font-size: 1em;
+        z-index: 1000;
+      }
+
+.menugauche {
+    position: absolute;
+    width:17%;
+    height:100%;
+  top:0%;
+  left:0%;
+  background-color: white;
+  color: #00cc82;
+        border: 1px solid black;
+  z-index: 10;
+
+}
+
+.menugauche p {  font-family: "Minipax";
+  font-size: 0.9em;
+  padding:5%;
+
+}
+
+.liensaccueil {
+  margin-left:5%;
+  padding:2px;
+  text-align: center;
+  font-family: "ApfelGrotezk", sans-serif;
+  font-size: 1.7em;
+  line-height: 1.8em;
+  text-decoration: none;
+  letter-spacing: -0.03em;
+  border: 2px solid #00cc82;
+
+}
+
+.liensaccueil:hover {
+  font-family: "Minipax";
+  text-decoration: underline;
+  font-size: 1.5em;
+  letter-spacing: 0em;
+}
+
+
+.trad {position: absolute;
+      bottom:2%;
+      right:3%;
+      background-color: white;
+      border-radius:20px;
+      border: 1px solid black;
+      font-family: "ApfelGrotezk", sans-serif;
+      font-size: 1em;
+      text-align: center;
+      width:5%;
+      z-index: 10;
+      }
+
+
+
+
+
+.contenuaccueil {
+        position: absolute;
+        width:54%;
+        top: 8%;
+        left: 19%;
+        height:90%;
+        overflow: auto;
+        z-index: 10;
+}
+
+.contenuaccueil a {color: #00cc82}
+
+#imgaccueil {
+  position: absolute;
+  width:25%;
+  top:0%;
+  height:100%;
+  right:0%;
+  bottom:0%;
+  overflow: auto;
+
+}
+
+#imgaccueil img {
+            width:97%;
+            left:0%;
+            height:100%;
+            width:auto;
+
+}
+
+.contenuetalons {
+        position: absolute;
+        top: 0%;
+        left: 37%;
+        right:1%;
+        height:100%;
+        width:60%;
+        font-family: "Minipax";
+        font-size: 1.5em;
+        overflow: auto;
+        z-index: 10;
+}
+.contenuetalons a, p {font-size: 0.7em;
+  color: #00cc82;
+}
+.texteetalons {
+        position: absolute;
+        top:0%;
+        left:17%;
+        height:100%;
+        width:15%;
+        background-color: white;
+        border-right: 1px solid black;
+
+}
+.texteetalons p {position: relative;
+  font-family: "Minipax";
+    font-size: 0.9em;
+    color: #00cc82;
+    top:13%;
+    left:5%;
+
+
+}
+
+.contenuetalons img {
+  max-width:700px;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: none;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 0%;
+  right: -40%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.contenupalmares {
+        position: absolute;
+        top: 3%;
+        left: 19%;
+        height:97%;
+        overflow: auto;
+        z-index: 10;
+}
+
+.contenupalmares img {
+  max-width: 700px;
+}
+
+.contenucontact {
+        position: absolute;
+        top: 8%;
+        left: 0%;
+        width:50%;
+        height:92%;
+        overflow: auto;
+        background-color: white;
+        border-right: 1px solid black;
+        z-index:10;
+}
+
+.contenucontact p {
+margin-left: 20px;
+  font-family: "ApfelGrotezk";
+  font-size:2em;
+  color:black;
+
+}
+.coordonnees {
+  position: absolute;
+  top: 8%;
+  right: 0%;
+  width:50%;
+  height:92%;
+  overflow: auto;
+  background-color: #e9f7f2;
+  z-index:10;
+}
+
+
+.texteaccueil {
+        position: relative;
+        bottom:0%;
+        width:70%;
+        overflow: auto;
+        font-family: 'Minipax';
+        font-size: 0.9em;
+        line-height: 1.4em;
+        color:black;
+        z-index:10;
+
+}
+
+.textepalmares {
+        font-family: 'Minipax';
+        font-size: 1em;
+        line-height: 1.4em;
+        color: black;
+
+}
+
+.titrepalmares {
+  font-family: 'ApfelGrotezk';
+  font-size: 1.8em;
+}
+
+.texteaccueil2 {
+        position: relative;
+        left: 0%;
+        width:70%;
+        font-family: 'ApfelGrotezk';
+        font-size: 0.9em;
+        line-height: 1.4em;
+        color:black;
+}
+
+
+#textegalerie {
+  position:absolute;
+  top:9%;
+  right:3%;
+  width:95%;
+  height:5%;
+  font-family: "ApfelGrotezk";
+  font-size: 1em;
+  color: #00cc82;
+  text-align: right;
+
+
+
+}
+.contenugalerie {
+
+  margin-top:9%;
+  height:90%;
+  overflow: auto;
+  display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+
+
+}
+
+.column {
+  flex: 25%;
+  max-width: 30%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  margin-right:8px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.column img:hover {opacity: 0.7;}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: fixed;
+  top:10%;
+  width:600px;
+  display: none;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+  font-family: "ApfelGrotezk";
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}

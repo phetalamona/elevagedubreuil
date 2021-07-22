@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="stylephone.css">
+
+</head>
+<body>
+<style>
+body {background: #e9f7f2;
+
+}
+</style>
+
+<div id="titre">
+	<div id="nom_elevage"><a href="index.html">L'Elevage du Breuil</a></div>
+<div id="menu"><ul class="liensmenu">Accueil</ul>
+<ul class="liensmenu"><a href="galerie.html">Galerie</a></ul>
+<ul class="liensmenu"><a href="contact.html">Contact</a></ul>
+</div>
+</div>
+
+
+<div class="menumobile">
+	<div class="containermobile" onclick="burger(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+</div>
+
+<div id="menuburgerouvert">
+<div id="close"></div>
+	<a class="liensaccueil">Accueil</a><br>
+		<a class="liensaccueil" href="galerie.html">Galerie</a><br>
+		<a class="liensaccueil" href="contact.html">Contact</a><br>
+		<a class="liensaccueil" href="etalons.html">Etalons /</a><br>
+		<a class="liensaccueil" href="poulini.html">Poulinières /</a><br>
+		<a class="liensaccueil" href="naissances.html">Naissances /</a><br>
+		<a class="liensaccueil" href="palmares.html">Palmarès</a><br>
+		<p>L'élevage bla bla bla petit texte</p>
+		<p style="text-align:center"><br>poels.wiljan@gmail.com <br>+33 6 82 45 82 96</p>
+		<p><a href="indexen.html">fr/en</a></p>
+		<p style="font-size:0.7em">Site réalisé en 2021 par Philippine Talamona, hébérgé sur ovh. Typographies :</p>
+</div>
+
+<div class="menugauche"><p style="padding-top: 20%;">Menu :</p>
+<a class="liensaccueil" href="etalons.html">Etalons /</a><br>
+<a class="liensaccueil" href="poulini.html">Poulinières /</a><br>
+<a class="liensaccueil" href="naissances.html">Naissances /</a><br>
+<a class="liensaccueil" href="palmares.html">Palmarès</a><br>
+<p>L'élevage bla bla bla petit texte</p>
+<p style="text-align:center"><br>poels.wiljan@gmail.com <br>+33 6 82 45 82 96</p>
+<p><a href="indexen.html">fr/en</a></p>
+<p style="font-size:0.7em">Site réalisé en 2021 par Philippine Talamona, hébérgé sur ovh. Typographies :</p>
+
+</div>
+
+
+<div class="contenuaccueil">
+
+<br>
+	<p class="texteaccueil" style="width:100%;font-size:1.7em;line-height:1.4em;">
+L’Elevage du Breuil fait naître sur un terroir d’excellence des pur-sang arabes de sport (orientation courses de plat et endurance) avec passion, rigueur, savoir-faire et qualité.<br> Les chevaux, élevés en semi-extensif sur plus de vingt hectares, sont débourrés en étang in situ ("aquadébourrage", voir <a href="https://www.youtube.com/watch?v=0Cl-VNeCti8">lien</a>).</p>
+<br><p class="texteaccueil2">－ Basta, la jument de base de l'élevage du Breuil, appartient à la même souche que Malika Fontenay, mère de gagnants de courses de Gr.1 PA : Darike, Chndaka, eux-mêmes pères de gagnants de Gr.1 PA, et qu’Unchainned Melody, mère de gagnants de Gr.1 PA : Mizzna, Munjiz (étalon), Gabra, Silver Zahatif (1er au Championnat de France 120 km à Monpazier 2003).</p>
+<p class="texteaccueil">－ Les étalons utilisés à la jumenterie : Djelfor, Djouras Tu, Tidjani, Kesberoy, Dormane, Dunixi, Kador du Bournais, Munjiz, Mahabb, Monsieur al Maury, Divamer, No Risk Al Maury, Jaafer, Josco du Cayrou, Al Mamum Monlau, Mu'Azzaz, Al Mourtajez.</p>
+<p class="texteaccueil2">－ L'élevage produit des chevaux rustiques, complémentés, nourris avec des céréales biologiques et du foin de qualité produits localement ; les granulés et les compléments de céréales utilisés sont de marque Baileys (Royal Oats).</p>
+<p class="texteaccueil">－ Les chevaux sont régulièrement manipulés avec soins individualisés (maréchal-ferrant, dentiste équin, et si besoin ostéopathe) ; ils sont vermifugés en fonction des examens coprologiques.</p>
+<p class="texteaccueil2">－ La jumenterie est située au centre de la France, dans une région d’élevage authentique et reconnue : le Berry Limousin, à 300 km au sud de Paris (via l’autoroute A20).
+ </p>
+
+</div>
+<div id="imgaccueil">
+	<img src="img/compo2.png" style="filter: grayscale(100%);">
+<!--<img src="img/accueil1.jpg" style="border-radius: 20px;border: 1px solid #ff9595;filter: grayscale(100%);">
+<img src="img/accueil2.jpg" style="border-radius: 50px;border: 1px solid black;">
+<img src="img/accueil3.jpg" style="border-radius: 20px;">
+<img src="img/accueil4.jpg" style="border-radius: 20px;">
+<img src="img/accueil5.jpg" style="border-radius: 20px;">
+<img src="img/accueil6.jpg" style="border-radius: 20px;">
+<img src="img/accueil7.jpg" style="border-radius: 20px;">
+-->
+</div>
+
+<script>
+function burger(x) {
+  x.classList.toggle("change");
+  document.getElementById("menuburgerouvert").style.display = 'block';
+}
+
+document.getElementById("close").onclick = function() {
+          document.getElementById("menuburgerouvert").style.display = "none";
+        }
+
+</script>
+
+</body>
+</html>
