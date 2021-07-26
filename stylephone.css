@@ -20,9 +20,50 @@
 .closebtn {display: none}
 
 #nom_elevage {position: absolute;
-              left:5px;
+              left:15px;
               top:15%;
               z-index: 10;
+}
+
+#nom_elevage :hover {
+  color: #cfd2d6}
+
+.contenuaccueil {
+        position: absolute;
+        width:79%;
+        top: 8%;
+        left: 19%;
+        height:90%;
+        overflow: auto;
+        z-index: 10;
+}
+
+#imgaccueil {
+  display: none;
+
+}
+
+.texteaccueil {
+        position: relative;
+        bottom:0%;
+        width:100%;
+        overflow: auto;
+        font-family: 'Minipax';
+        font-size: 1em;
+        line-height: 1.4em;
+        color:black;
+        z-index:10;
+
+}
+
+.texteaccueil2 {
+        position: relative;
+        left: 0%;
+        width:100%;
+        font-family: 'ApfelGrotezk';
+        font-size: 1em;
+        line-height: 1.4em;
+        color:black;
 }
 
   .menumobile {
@@ -44,6 +85,7 @@
   height:92%;
   background: white;
   text-align: center;
+  overflow: auto;
   z-index:100;
 
 }
@@ -55,7 +97,7 @@
 }
 
 .liensaccueil {
-  font-size: 2.5em;
+  font-size: 2.8em;
   line-height: 2em;
   text-decoration: none;
   letter-spacing: -0.03em;
@@ -63,12 +105,19 @@
 
 }
 
+.liensaccueil:hover {
+  font-family: "Minipax";
+  text-decoration: underline;
+  font-size: 2.5em;
+  letter-spacing: 0em;
+}
+
 
   .containermobile {
   display: inline-block;
   cursor: pointer;
-  margin-left: 5px;
-  margin-top:5px;
+  margin-left: 25%;
+  margin-top:15px;
 }
 
 .bar1, .bar2, .bar3 {
@@ -96,6 +145,57 @@ cursor: pointer;
   opacity: 0;
 }
 
+.contenuetalons {
+        position: absolute;
+        top: 0%;
+        left: 20%;
+        right:1%;
+        height:100%;
+        width:77%;
+        font-family: "Minipax";
+        font-size: 1.5em;
+        overflow: auto;
+        z-index: 10;
+}
 
+.contenuetalons img {
+  max-width:390px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: hidden;
+  opacity: 1;
+}
+
+.contenucontact {
+        position: absolute;
+        top: 8%;
+        left: 0%;
+        width:98%;
+        height:92%;
+        overflow: auto;
+        background-color: white;
+        border-right: 0px solid black;
+        text-align: center;
+        z-index:10;
+}
+
+.coordonnees {
+  display: none;
+}
+
+.contenupalmares {
+        position: absolute;
+        top: 3%;
+        left: 19%;
+        width:80%;
+        height:97%;
+        overflow: auto;
+        z-index: 10;
+}
+
+.contenupalmares img {
+  max-width: 390px;
+}
 
 }

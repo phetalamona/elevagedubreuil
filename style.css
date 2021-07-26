@@ -190,8 +190,11 @@ a:visited {
         overflow: auto;
         z-index: 10;
 }
-.contenuetalons a, p {font-size: 0.7em;
+.contenuetalons a {font-size: 0.7em;
   color: #00cc82;
+}
+.contenuetalons p {font-size: 0.7em;
+  color: black;
 }
 .texteetalons {
         position: absolute;
