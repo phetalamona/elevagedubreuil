@@ -26,16 +26,15 @@ body {background: #e9f7f2;
 </div>
 
 
-<div class="menumobile">
-	<div class="containermobile" onclick="burger(this)">
+
+	<div class="containermobile" onclick="burger(this);myFunction(this)">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
 </div>
-</div>
+
 
 <div id="menuburgerouvert">
-<div id="close"></div>
 	<a class="liensaccueil">Accueil</a><br>
 		<a class="liensaccueil" href="galerie.html">Galerie</a><br>
 		<a class="liensaccueil" href="contact.html">Contact</a><br>
@@ -88,14 +87,18 @@ L’Elevage du Breuil fait naître sur un terroir d’excellence des pur-sang ar
 </div>
 
 <script>
-function burger(x) {
+function myFunction(x) {
   x.classList.toggle("change");
-  document.getElementById("menuburgerouvert").style.display = 'block';
 }
 
-document.getElementById("close").onclick = function() {
-          document.getElementById("menuburgerouvert").style.display = "none";
-        }
+function burger() {
+  var x = document.getElementById("menuburgerouvert");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 
 </script>
 
