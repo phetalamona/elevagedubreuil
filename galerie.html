@@ -23,6 +23,26 @@ body {background: #e9f7f2;
 	</div>
 	</div>
 
+	<div class="containermobile" onclick="burger(this);myFunction(this)">
+	<div class="bar1"></div>
+	<div class="bar2"></div>
+	<div class="bar3"></div>
+	</div>
+
+
+	<div id="menuburgerouvert">
+	<a class="liensaccueil">Accueil</a><br>
+		<a class="liensaccueil" href="galerie.html">Galerie</a><br>
+		<a class="liensaccueil" href="contact.html">Contact</a><br>
+		<a class="liensaccueil" href="etalons.html">Etalons /</a><br>
+		<a class="liensaccueil" href="poulini.html">Poulinières /</a><br>
+		<a class="liensaccueil" href="naissances.html">Naissances /</a><br>
+		<a class="liensaccueil" href="palmares.html">Palmarès</a><br>
+		<p>L'élevage bla bla bla petit texte</p>
+		<p style="text-align:center"><br>poels.wiljan@gmail.com <br>+33 6 82 45 82 96</p>
+		<p><a href="indexen.html">fr/en</a></p>
+		<p style="font-size:0.7em">Site réalisé en 2021 par Philippine Talamona, hébérgé sur ovh. Typographies :</p>
+	</div>
 
 
 
@@ -222,14 +242,18 @@ function myFunction(imgs) {
 }
 </script>
 <script>
-function burger(x) {
+function myFunction(x) {
   x.classList.toggle("change");
-  document.getElementById("menuburgerouvert").style.display = 'block';
 }
 
-document.getElementById("close").onclick = function() {
-          document.getElementById("menuburgerouvert").style.display = "none";
-        }
+function burger() {
+  var x = document.getElementById("menuburgerouvert");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 
 </script>
 

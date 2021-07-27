@@ -31,9 +31,9 @@
 
 .contenuaccueil {
         position: absolute;
-        width:79%;
+        width:93%;
         top: 8%;
-        left: 19%;
+        left: 5%;
         height:90%;
         overflow: auto;
         z-index: 10;
@@ -94,6 +94,7 @@
 #menuburgerouvert p {  font-family: "Minipax";
   font-size: 1em;
   padding:5%;
+  color: #00cc82;
 
 }
 
@@ -117,6 +118,8 @@
   .containermobile {
   display: block;
   position: absolute;
+  top:1%;
+  left:2%;
   cursor: pointer;
   z-index:1000;
 }
@@ -154,10 +157,10 @@
 .contenuetalons {
         position: absolute;
         top: 0%;
-        left: 20%;
+        left: 5%;
         right:1%;
         height:100%;
-        width:77%;
+        width:95%;
         font-family: "Minipax";
         font-size: 1.5em;
         overflow: auto;
@@ -193,8 +196,8 @@
 .contenupalmares {
         position: absolute;
         top: 3%;
-        left: 19%;
-        width:80%;
+        left: 5%;
+        width:93%;
         height:97%;
         overflow: auto;
         z-index: 10;

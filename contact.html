@@ -27,7 +27,6 @@
 </div>
 
 <div id="menuburgerouvert">
-<div id="close"></div>
 	<a class="liensaccueil">Accueil</a><br>
 		<a class="liensaccueil" href="galerie.html">Galerie</a><br>
 		<a class="liensaccueil" href="contact.html">Contact</a><br>
@@ -58,14 +57,18 @@
 </div>
 </div>
 <script>
-function burger(x) {
+function myFunction(x) {
   x.classList.toggle("change");
-  document.getElementById("menuburgerouvert").style.display = 'block';
 }
 
-document.getElementById("close").onclick = function() {
-          document.getElementById("menuburgerouvert").style.display = "none";
-        }
+function burger() {
+  var x = document.getElementById("menuburgerouvert");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 
 </script>
 </body>
