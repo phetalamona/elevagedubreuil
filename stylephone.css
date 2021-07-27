@@ -20,8 +20,8 @@
 .closebtn {display: none}
 
 #nom_elevage {position: absolute;
-              left:15%;
-              top:25%;
+              left:2%;
+              top:20%;
               z-index: 10;
               font-size: 0.8em;
 }
@@ -119,7 +119,7 @@
   display: block;
   position: absolute;
   top:1%;
-  left:2%;
+  right:2%;
   cursor: pointer;
   z-index:1000;
 }
