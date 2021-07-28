@@ -71,7 +71,8 @@
 #photophone {display: block;padding-top:5%;width:97%;}
 
 .galerielegende {display: block;
-font-family: "ApfelGrotezk"}
+font-family: "ApfelGrotezk";
+padding: 0%;}
 
 .texteaccueil {
         position: relative;
