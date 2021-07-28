@@ -1,4 +1,28 @@
 @media screen and (max-width: 800px){
+
+  @font-face {
+    font-family: "ApfelGrotezk";
+    src: url("fonts/ApfelGrotezk-Regular.woff2") format("woff2"),
+         url("fonts/ApfelGrotezk-Regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Montserrat-Regular";
+    src: url("fonts/Montserrat-Regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Minipax";
+    src: url("fonts/Minipax-Regular.woff2") format("woff2"),
+         url("fonts/Minipax-Regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Messapia";
+    src: url("fonts/Messapia-Regular.woff2") format("woff2"),
+         url("fonts/Messapia-Regular.woff") format("woff");
+  }
+  
   #menu {
     display:none;
   }
