@@ -70,6 +70,9 @@
 
 #photophone {display: block;padding-top:5%;width:97%;}
 
+.galerielegende {display: block;
+font-family: "ApfelGrotezk"}
+
 .texteaccueil {
         position: relative;
         bottom:0%;
