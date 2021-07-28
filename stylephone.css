@@ -78,7 +78,7 @@ padding: 0%;}
         position: relative;
         bottom:0%;
         width:100%;
-        overflow: auto;
+        overflow: hidden;
         font-family: 'Minipax';
         font-size: 1em;
         line-height: 1.4em;
