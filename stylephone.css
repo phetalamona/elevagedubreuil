@@ -68,6 +68,8 @@
 
 }
 
+#photophone {display: block;padding-top:5%;width:97%;}
+
 .texteaccueil {
         position: relative;
         bottom:0%;

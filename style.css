@@ -33,6 +33,8 @@ a:visited {
 
 }
 
+#photophone {display: none;}
+
 #titre {position: absolute;
   height:8%;
   width:100%;
